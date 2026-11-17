@@ -26,7 +26,7 @@ A cold-start test protocol and pass/fail gate checklist to verify a migration (o
 ## How to Use
 
 ### Option 1 — As an AI Agent Skill (Recommended)
-Copy this folder into your target Base44 project (or your agent's global skills directory, e.g. `~/.gemini/skills/base44-migrate/`):
+Clone into your target Base44 project (or your coding agent's skills directory):
 
 ```bash
 git clone https://github.com/X0EF/base44-migrate.git

@@ -70,7 +70,7 @@ Run everything inside Docker (`Makefile`: `make up`, `make seed`, `make test`, `
 ## Phase 3 — Vertical-Slice Porting (`0` → `N`)
 
 Migrate **one sidebar module at a time** in this order:
-1. **Update `docs/PRD.md` first** (business rules, roles, invariants).
+1. **Update `docs/PRD.md` first** (create it if missing — document business rules, roles, and invariants).
 2. **Port `base44/shared/*.ts` → `server/src/shared/*.js`** once and import from `../shared/`.
 3. **Port each `base44/functions/<fnName>/entry.ts`** into `server/src/services/<module>Service.js` using this 4-line mechanical translation:
 
@@ -115,3 +115,4 @@ Migrate **one sidebar module at a time** in this order:
    - `make build`
    - Playwright route smoke test (`scripts/smoke-routes.mjs`) + k6 role-based soak test (`scripts/k6-production-month.js`)
 4. Smoke-check `/api/health` (`{"status":"ok","db":"connected"}`) on production after deploy.
+5. Run every gate in [`verification.md`](./verification.md) to confirm a clean cutover.
