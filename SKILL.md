@@ -1,9 +1,9 @@
 ---
-name: debase44ifying
+name: base44-migrate
 description: End-to-end playbook for migrating a Base44 application to a self-hosted Node.js + Express + PostgreSQL (or MongoDB) + Docker stack without a big-bang rewrite.
 ---
 
-# De-Base44ifying Skill (`debase44ifying-skill.md`)
+# Base44 Migrate (`SKILL.md`)
 
 A complete, one-stop migration playbook for removing `@base44/sdk` and `@base44/vite-plugin` from a React + Vite codebase and replacing them with a self-hosted backend.
 

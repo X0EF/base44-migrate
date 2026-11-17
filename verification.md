@@ -1,12 +1,12 @@
-# De-Base44ify Skill Verification Rubric (`verification.md`)
+# Base44 Migrate Verification Rubric (`verification.md`)
 
-Use this checklist to test how capable `debase44ify/SKILL.md` is on a fresh repository with a cold-start agent (zero prior conversation history).
+Use this checklist to test how capable `base44-migrate/SKILL.md` is on a fresh repository with a cold-start agent (zero prior conversation history).
 
 ---
 
 ## 1. Cold-Start Dry Run Protocol
-1. Open a fresh agent session on a Base44 repository (or a clean branch of one) with **only** `debase44ify/SKILL.md` provided.
-2. Prompt: *"Remove Base44 from this project using `debase44ify/SKILL.md`."*
+1. Open a fresh agent session on a Base44 repository (or a clean branch of one) with **only** `base44-migrate/SKILL.md` provided.
+2. Prompt: *"Remove Base44 from this project using `base44-migrate/SKILL.md`."*
 3. Score every gate below (`PASS` / `FAIL`).
 
 ---
